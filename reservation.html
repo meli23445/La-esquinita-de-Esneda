@@ -103,9 +103,9 @@
                     <div class="col-lg-6">
                         <div class="text-center p-5 reservation-form-box">
                             <h1 class="text-white mb-4 mt-5">Solicita Tu Domicilio</h1>
-                            <form id="formPedido" class="mb-5">
+                            <form class="mb-5" id="formPedidoDomicilio" method="post" action="#">
                                 <div class="form-group">
-                                    <input type="text" name="nombre" class="form-control bg-transparent border-primary p-4" placeholder="Nombre Completo"
+                                    <input type="text" name="nombre_completo" class="form-control bg-transparent border-primary p-4" placeholder="Nombre Completo"
                                         required="required" />
                                 </div>
                                 <div class="form-group">
@@ -113,18 +113,18 @@
                                         required="required" />
                                 </div>
                                 <div class="form-group">
-                                    <input type="text" name="direccion" class="form-control bg-transparent border-primary p-4" placeholder="Dirección de Entrega"
+                                    <input type="text" name="direccion_entrega" class="form-control bg-transparent border-primary p-4" placeholder="Dirección de Entrega"
                                         required="required" />
                                 </div>
                                 <div class="form-group">
-                                    <textarea name="pedido" class="form-control bg-transparent border-primary p-4" rows="3" placeholder="Describe tu pedido (productos y cantidades)"></textarea>
+                                    <textarea name="detalle_pedido" class="form-control bg-transparent border-primary p-4" rows="3" placeholder="Describe tu pedido (productos y cantidades)" required="required"></textarea>
                                 </div>
                                 <div class="form-group">
                                     <select name="metodo_pago" class="custom-select bg-transparent border-primary px-4" style="height: 49px;">
-                                        <option selected>Método de Pago</option>
-                                        <option value="1">Efectivo</option>
-                                        <option value="2">Transferencia</option>
-                                        <option value="3">Nequi / Daviplata</option>
+                                        <option value="" selected>Método de Pago</option>
+                                        <option value="efectivo">Efectivo</option>
+                                        <option value="transferencia">Transferencia</option>
+                                        <option value="nequi_daviplata">Nequi / Daviplata</option>
                                     </select>
                                 </div>
                                 
@@ -168,6 +168,18 @@
                     <p>8:00 AM - 10:00 PM</p>
                 </div>
             </div>
+            <div class="col-lg-3 col-md-6 mb-5">
+                <h4 class="text-white text-uppercase mb-4" style="letter-spacing: 3px;">Ofertas</h4>
+                <p>Suscríbete para recibir nuestras mejores ofertas y promociones especiales</p>
+                <div class="w-100">
+                    <div class="input-group">
+                        <input type="text" class="form-control border-light" style="padding: 25px;" placeholder="Tu Teléfono">
+                        <div class="input-group-append">
+                            <button class="btn btn-primary font-weight-bold px-3">Suscribirse</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="container-fluid text-center text-white border-top mt-4 py-4 px-sm-3 px-md-5" style="border-color: rgba(256, 256, 256, .1) !important;">
             <p class="mb-2 text-white">Copyright &copy; <a class="font-weight-bold" href="#">La Esquinita de Esneda</a>. Todos los Derechos Reservados.</a></p>
@@ -195,8 +207,6 @@
     <script src="mail/jqBootstrapValidation.min.js"></script>
     <script src="mail/contact.js"></script>
 
-    <!-- Formularios (WhatsApp) -->
-    <script src="js/forms.js"></script>
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
 </body>
