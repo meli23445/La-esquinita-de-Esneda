@@ -103,28 +103,28 @@
                     <div class="col-lg-6">
                         <div class="text-center p-5 reservation-form-box">
                             <h1 class="text-white mb-4 mt-5">Solicita Tu Domicilio</h1>
-                            <form class="mb-5" id="formPedidoDomicilio" method="post" action="#">
+                            <form class="mb-5">
                                 <div class="form-group">
-                                    <input type="text" name="nombre_completo" class="form-control bg-transparent border-primary p-4" placeholder="Nombre Completo"
+                                    <input type="text" class="form-control bg-transparent border-primary p-4" placeholder="Nombre Completo"
                                         required="required" />
                                 </div>
                                 <div class="form-group">
-                                    <input type="tel" name="telefono" class="form-control bg-transparent border-primary p-4" placeholder="Teléfono o WhatsApp"
+                                    <input type="tel" class="form-control bg-transparent border-primary p-4" placeholder="Teléfono o WhatsApp"
                                         required="required" />
                                 </div>
                                 <div class="form-group">
-                                    <input type="text" name="direccion_entrega" class="form-control bg-transparent border-primary p-4" placeholder="Dirección de Entrega"
+                                    <input type="text" class="form-control bg-transparent border-primary p-4" placeholder="Dirección de Entrega"
                                         required="required" />
                                 </div>
                                 <div class="form-group">
-                                    <textarea name="detalle_pedido" class="form-control bg-transparent border-primary p-4" rows="3" placeholder="Describe tu pedido (productos y cantidades)" required="required"></textarea>
+                                    <textarea class="form-control bg-transparent border-primary p-4" rows="3" placeholder="Describe tu pedido (productos y cantidades)"></textarea>
                                 </div>
                                 <div class="form-group">
-                                    <select name="metodo_pago" class="custom-select bg-transparent border-primary px-4" style="height: 49px;">
-                                        <option value="" selected>Método de Pago</option>
-                                        <option value="efectivo">Efectivo</option>
-                                        <option value="transferencia">Transferencia</option>
-                                        <option value="nequi_daviplata">Nequi / Daviplata</option>
+                                    <select class="custom-select bg-transparent border-primary px-4" style="height: 49px;">
+                                        <option selected>Método de Pago</option>
+                                        <option value="1">Efectivo</option>
+                                        <option value="2">Transferencia</option>
+                                        <option value="3">Nequi / Daviplata</option>
                                     </select>
                                 </div>
                                 
