@@ -1,1 +1,0 @@
-# La-esquinita-de-Esneda
